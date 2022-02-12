@@ -1,0 +1,183 @@
+@charset "UTF-8";
+/* generales sass*/
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/*cuerpo*/
+body {
+  background-color: #141412;
+}
+
+/*menú*/
+.menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: right;
+      -ms-flex-pack: right;
+          justify-content: right;
+  margin-left: 20px;
+}
+
+a {
+  text-decoration: none;
+  color: #faf5f5;
+}
+
+/*hasta acá generales sass*/
+/*index*/
+nav ul li {
+  display: block;
+  margin-top: 35px;
+  margin-right: 50px;
+  margin-left: 80px;
+}
+
+.titulo {
+  font-size: 300%;
+  color: #FFD700;
+  text-align: center;
+  margin: 100px;
+  font-family: 'comforter';
+}
+
+.parasiteOscar {
+  justify-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (2fr)[2];
+      grid-template-columns: repeat(2, 2fr);
+  -ms-grid-rows: (4fr)[3];
+      grid-template-rows: repeat(3, 4fr);
+      grid-template-areas: "foto1 foto2" "foto4 foto3" "foto5 foto6";
+}
+
+.foto1 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: foto1;
+  background-color: #b43a3a;
+}
+
+.foto2 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: foto2;
+  background-color: #b43a3a;
+}
+
+.foto3 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: foto3;
+  background-color: #b43a3a;
+}
+
+.foto4 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: foto4;
+  background-color: #b43a3a;
+}
+
+.foto5 {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: foto5;
+  background-color: #b43a3a;
+}
+
+.foto6 {
+  -ms-grid-row: 3;
+  -ms-grid-column: 2;
+  grid-area: foto6;
+  background-color: #b43a3a;
+}
+
+/*consultar si este media va en generales o dónde en sass*/
+@media only screen and (max-width: 700px) {
+  nav {
+    background-color: turquoise;
+  }
+  /*generales o dónde en sass*/
+  .parasiteOscar {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 2fr;
+        grid-template-columns: 2fr;
+    -ms-grid-rows: 6fr;
+        grid-template-rows: 6fr;
+        grid-template-areas: "foto1" "foto2" "foto3" "foto4" "foto5" "foto6";
+  }
+}
+
+/* nosotros*/
+.parrafo {
+  color: #faf5f5;
+  margin: 80px;
+}
+
+/*servicios*/
+.peliculas {
+  justify-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 80px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  -ms-grid-rows: (1fr)[2];
+      grid-template-rows: repeat(2, 1fr);
+      grid-template-areas: "peli1 peli2" "peli3 peli4";
+}
+
+.peli1 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: peli1;
+  background-color: white;
+}
+
+.peli2 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: peli2;
+  background-color: white;
+}
+
+.peli3 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: peli3;
+  background-color: white;
+}
+
+.peli4 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: peli4;
+  background-color: white;
+}
+
+/*media queries*/
+@media only screen and (max-width: 700px) {
+  .peliculas {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 2fr;
+        grid-template-columns: 2fr;
+    -ms-grid-rows: 6fr;
+        grid-template-rows: 6fr;
+        grid-template-areas: "peli1" "peli2" "peli3" "peli4";
+  }
+}
+/*# sourceMappingURL=estilos.css.map */

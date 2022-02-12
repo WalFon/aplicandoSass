@@ -1,0 +1,74 @@
+/*index*/
+nav ul li {
+    display: block;
+    margin-top: 35px;
+    margin-right: 50px;
+    margin-left: 80px;
+}
+.titulo{
+ font-size: 300%;
+ color: #FFD700;
+ text-align: center;
+ margin: 100px;
+ font-family: 'comforter';
+}
+
+.parasiteOscar{
+ justify-items: center;
+ align-items: center;
+ display: grid;
+ grid-template-columns: repeat(2, 2fr);
+ grid-template-rows: repeat(3, 4fr);
+ grid-template-areas: 
+ "foto1 foto2"
+ "foto4 foto3"
+ "foto5 foto6"
+ ;
+}
+
+.foto1{
+ grid-area: foto1;
+ background-color: rgb(180, 58, 58);
+}
+.foto2{
+ grid-area: foto2;
+ background-color: rgb(180, 58, 58);
+}
+.foto3{
+ grid-area: foto3;
+ background-color: rgb(180, 58, 58);
+}
+.foto4{
+ grid-area: foto4;
+ background-color: rgb(180, 58, 58);
+}
+.foto5{
+ grid-area: foto5;
+ background-color: rgb(180, 58, 58);
+}
+.foto6{
+ grid-area: foto6;
+ background-color: rgb(180, 58, 58);
+}
+/*consultar si este media va en generales o dónde en sass*/
+@media only screen and (max-width:700px){
+ nav{
+   background-color: turquoise;
+}
+/*generales o dónde en sass*/
+
+.parasiteOscar{
+ display: grid;
+ grid-template-columns: 2fr;
+ grid-template-rows: 6fr;
+ grid-template-areas: 
+ "foto1"
+ "foto2"
+ "foto3"
+ "foto4"
+ "foto5"
+ "foto6"
+ ;
+ 
+}
+}

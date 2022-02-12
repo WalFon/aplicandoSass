@@ -1,0 +1,51 @@
+/*servicios*/
+.peliculas{
+    justify-items: center;
+    align-items: center;
+    margin: 80px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas: 
+    "peli1 peli2"
+    "peli3 peli4"
+    ;
+  }
+  
+  .peli1{
+    grid-area: peli1;
+    background-color: white;
+  }
+  
+  .peli2{
+    grid-area: peli2;
+    background-color: white;
+  }
+  
+  .peli3{
+    grid-area: peli3;
+    background-color: white;
+  }
+  
+  .peli4{
+    grid-area: peli4;
+    background-color: white;
+  }
+  
+  /*media queries*/
+  
+  @media only screen and (max-width: 700px){
+    
+    .peliculas{
+      display: grid;
+      grid-template-columns: 2fr;
+      grid-template-rows: 6fr;
+      grid-template-areas:
+      "peli1"
+      "peli2"
+      "peli3"
+      "peli4"
+      ;
+    }
+  }
+  
